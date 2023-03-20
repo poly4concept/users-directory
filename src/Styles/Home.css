@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+
+.container h2{
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    font-weight: 300; 
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table .table__header{
+    background-color: #000000; 
+    color: #ffffff; 
+    border-bottom-width: 1px; 
+   
+}
+.table .table__header th{
+    padding: 1rem 1.5rem;
+    font-weight: 300;
+}
+.table .table__header tr .header_item {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 100%; 
+}
+
+.table .table__body tr{
+    border-bottom-width: 1px; 
+    cursor: pointer; 
+}
+.table .table__body tr:hover{
+    background-color: #FFF4F1 
+}
+
+.table .table__body td{
+    padding: 1.25rem; 
+    font-weight: 300; 
+    white-space: nowrap; 
+}
+.actions{
+    width: fit-content;
+    display: flex;
+    margin: 20px 0;
+}
+
+.button {
+    border-radius: 4px;
+    font-weight: 300;
+    padding: 10px 24px;
+    border: none;
+    background-color: #F04D22;
+    color: #FFF4F1;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+}
+.button--next{
+    margin-left: 20px;
+}
+.button--disabled{
+    background-color: #858585 ;
+    cursor: not-allowed;
+}
+
+@media (min-width: 768px) { 
+    .container{
+        padding: 0 2rem;
+    }
+ }
+@media (min-width: 1024px) { 
+    .container{
+        padding: 0 6rem;
+    }
+    .actions{
+        align-self: flex-end; 
+    }
+ }
